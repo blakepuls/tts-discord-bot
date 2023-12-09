@@ -1,0 +1,9 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "./src/web/index.ts",
+    "./src/utils/index.ts",
+    "./src/db/index.ts"
+  ],
+  "out": "docs"
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "target": "ES5",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "typeRoots": ["../../types"],
+    "outDir": "dist",
+    "paths": {
+      "@types/*": ["../../types/*"],
+      "@config": ["../../config/config"]
+    }
+  },
+  "include": ["src/**/*", "../../config/config.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "@bot-template/lib",
+  "prisma": {
+    "schema": "src/db/prisma/schema.prisma"
+  },
+  "version": "1.0.0",
+  "description": "A shared library of functions to be used with bot-template, both front and backend.",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@config": "./dist/config.js",
+    "@lib": "./dist/packages/lib/src",
+    "@": "./dist/packages/discord/src"
+  },
+  "typedoc": {
+    "entryPoint": "./src/discord/index.ts"
+  },
+  "scripts": {
+    "prisma:generate": "npx prisma generate",
+    "prisma:studio": "npx prisma studio",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:push": "npx prisma db push",
+    "lint": "eslint --fix --ext .ts src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Blake Puls",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.3.0",
+    "@types/buffer-crc32": "^0.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^31.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^2.8.3",
+    "rollup": "^3.10.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typedoc": "^0.23.24",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.9.0",
+    "@types/node": "^18.11.18",
+    "buffer-crc32": "^0.2.13",
+    "chalk": "^4.1.2",
+    "dgram": "^1.0.1",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "ioredis": "^5.3.0",
+    "prisma": "^4.9.0",
+    "winston": "^3.8.2"
+  }
+}

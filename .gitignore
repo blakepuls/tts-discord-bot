@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+init-letsencrypt.sh
+
+dist/
+
+
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+coverage
+
+# docs
+/lib/docs
+
+# next.js
+.next/
+website/out/
+
+# production
+/website/build
+dist/
+build/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+config/*.env*
+
+
+# vercel
+/website/.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

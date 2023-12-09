@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "typeRoots": ["../../node_modules/discord.js/typings"],
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      // "@types/*": ["src/types/*"],
+      "@root/*": ["../../*"],
+      "@config": ["../../config/config.ts"],
+      "@lib/*": ["../lib/src/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "../lib/src/**/index.ts",
+    "../lib/src/types/**/*",
+    "src/types",
+    "../../@types/index.d.ts",
+    "../lib/src/utils/game.ts"
+  ],
+  "exclude": ["node_modules"]
+}

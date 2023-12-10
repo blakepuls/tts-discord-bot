@@ -1,4 +1,5 @@
-import { CacheTypes, CacheValue } from '@lib/types';
+type CacheTypes = any;
+type CacheValue<C extends keyof CacheTypes> = CacheTypes[C];
 
 /**
  * @typedef {Object} UseState

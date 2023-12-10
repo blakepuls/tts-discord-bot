@@ -1,5 +1,4 @@
 import DiscordClient from '@lib/discord/client';
-import { CacheTypes, CacheValue } from '@lib/types';
 import Discord from 'discord.js';
 import { State, createState } from '.';
 import { UseState } from './State';

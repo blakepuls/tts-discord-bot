@@ -19,7 +19,13 @@ const config: Config = {
       warning: "#FF5F15", // Channel orange color? #FF7E30
     },
     client: {
-      intents: ["Guilds", "GuildMessages", "GuildMessages"],
+      intents: [
+        "Guilds",
+        "GuildMessages",
+        "GuildMessages",
+        "GuildVoiceStates",
+        "MessageContent",
+      ],
       partials: [
         Partials.Channel,
         Partials.GuildMember,
